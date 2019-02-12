@@ -38,4 +38,3 @@ for i in range(len(claims)):
 for i in range(len(claims)):
     if i not in clashed_claims:
         print(i + 1)
-
