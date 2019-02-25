@@ -15,26 +15,29 @@ y = int(m.group(1))
 print(x)
 print(y)
 
-# left
-walker_x = x
-while walker_x != 0 and walker_x < 1000:
-    print(walker_x)
-    walker_x -= 1
-    new_coord = ("%s, %s" % (walker_x, y))
-    if new_coord in coordinates:
-        print('BOOM')
+walk_x_right(x)
+walk_x_left(x)
+walk_x_north(x)
+walk_x_south(x)
 
-# right
-walker_x = x
-while walker_x != 0 and walker_x < 1000:
-    print(walker_x)
-    walker_x += 1
-    new_coord = ("%s, %s" % (walker_x, y))
-    print(new_coord)
-    if new_coord in coordinates:
-        print('BOOM')
+def walk_x_right(x):
+    while x != 0 and x < 1000:
+        print(x)
+        x += 1
+        new_coord = ("%s, %s" % (x, y))
+        print(new_coord)
+        if new_coord in coordinates:
+            print('BOOM')
 
-def x_walker(x_coord)
+def walk_x_left(x):
+    while x != 0 and x < 1000:
+        print(x)
+        x -= 1
+        new_coord = ("%s, %s" % (x, y))
+        print(new_coord)
+        if new_coord in coordinates:
+            print('BOOM')
+
 
 
 # x_coords = {}
